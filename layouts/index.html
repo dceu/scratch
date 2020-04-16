@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="branding">
+        <button id="openbtn" class="openbtn" onclick="openNav()">&#9776; </button>
+        <div id="home-container">
+            <h1><a id="home" href="#0">Donovan Uy</a></h1>
+        </div>
+    </header>
+    <div id="main-nav">
+        <ul>
+            <li>
+                <a href=#></a>home</li>
+            <li>
+                <a href=#></a>about</li>
+            <li>
+                <a href=#></a>blog</li>
+            <li>
+                <a href=#></a>portfolio</li>
+        </ul>
+    </div>
+    <div id="content">
+
+        {{- range first 10 .Data.Pages }}
+
+        <div class="subtopic-container">
+            <h2 class="subtopic">{{ .Title}}
+                <p class="meta">{{.ReadingTime }} min read</p>
+            </h2>
+
+            <p>{{ .Summary }} <br>. . .<a class="read-more" href="{{ .RelPermalink }}"> more --></a></p>
+        </div>
+        {{- end }}
+
+
+        <div class="subtopic-container">
+            <h1 class="title">Title
+                <p class="meta">meta text</p>
+            </h1>
+        </div>
+        <div class="subtopic-container">
+            <h2 class="subtopic">Quis nostrud ut commodo esse veniam sunt ex labore proident sunt dolore.</h2>
+            <p class="article-text-italic">Fugiat ullamco id quis ea pariatur minim non cillum sint sit ad. Excepteur mollit cillum duis eu consequat aute. Sit ullamco eu irure commodo amet aliqua velit elit anim.</p>
+            </p>
+        </div>
+        <!-- <div class="subtopic-container">
+            <h2 class="subtopic">Laborum nulla qui ex reprehenderit officia Lorem id esse cupidatat aliqua.</h2>
+            <p class="article-text-regular"> Lorem labore ea ad mollit sit nulla nostrud. Magna aliqua velit nisi nulla ea aliqua aliquip enim anim. Ea in occaecat nostrud sunt cillum. Officia duis duis magna nostrud et aliqua ipsum id magna nostrud elit officia qui irure. Aliqua et
+                consequat ipsum in veniam officia est consectetur fugiat. Ex ex deserunt eu labore veniam tempor consequat consectetur non proident duis. </p>
+            <p> Sit anim nisi officia veniam esse. Cupidatat veniam laborum amet enim dolore nisi ea nostrud qui. Nulla pariatur nisi magna ut incididunt esse ullamco aliquip pariatur occaecat in veniam cillum. Nisi qui cupidatat elit elit incididunt sit
+                in. Eiusmod aliquip consequat esse esse quis eiusmod nisi do labore ea. Incididunt amet ullamco enim sunt. Officia adipisicing mollit nulla anim et ex consectetur commodo duis cupidatat. </p>
+            <p> Incididunt qui eiusmod enim et excepteur proident ad cillum do eu non. Quis reprehenderit elit ea ea ex. Tempor qui fugiat sint labore tempor. Aliquip sunt do id dolor do Lorem proident enim fugiat voluptate. Do quis minim sunt et dolor id
+                sunt eiusmod ex anim. Magna occaecat Lorem tempor ipsum deserunt minim adipisicing tempor esse Lorem. </p>
+        </div>
+        <div class="subtopic-container">
+            <h2 class="subtopic">Laborum nulla qui ex reprehenderit officia Lorem id esse cupidatat aliqua.</h2>
+            <p class="article-text-regular"> Lorem labore ea ad mollit sit nulla nostrud. Magna aliqua velit nisi nulla ea aliqua aliquip enim anim. Ea in occaecat nostrud sunt cillum. Officia duis duis magna nostrud et aliqua ipsum id magna nostrud elit officia qui irure. Aliqua et
+                consequat ipsum in veniam officia est consectetur fugiat. Ex ex deserunt eu labore veniam tempor consequat consectetur non proident duis. </p>
+            <p> Sit anim nisi officia veniam esse. Cupidatat veniam laborum amet enim dolore nisi ea nostrud qui. Nulla pariatur nisi magna ut incididunt esse ullamco aliquip pariatur occaecat in veniam cillum. Nisi qui cupidatat elit elit incididunt sit
+                in. Eiusmod aliquip consequat esse esse quis eiusmod nisi do labore ea. Incididunt amet ullamco enim sunt. Officia adipisicing mollit nulla anim et ex consectetur commodo duis cupidatat. </p>
+            <p> Incididunt qui eiusmod enim et excepteur proident ad cillum do eu non. Quis reprehenderit elit ea ea ex. Tempor qui fugiat sint labore tempor. Aliquip sunt do id dolor do Lorem proident enim fugiat voluptate. Do quis minim sunt et dolor id
+                sunt eiusmod ex anim. Magna occaecat Lorem tempor ipsum deserunt minim adipisicing tempor esse Lorem. </p>
+        </div>
+        <div class="subtopic-container">
+            <h2 class="subtopic">Laborum nulla qui ex reprehenderit officia Lorem id esse cupidatat aliqua.</h2>
+            <p class="article-text-regular"> Lorem labore ea ad mollit sit nulla nostrud. Magna aliqua velit nisi nulla ea aliqua aliquip enim anim. Ea in occaecat nostrud sunt cillum. Officia duis duis magna nostrud et aliqua ipsum id magna nostrud elit officia qui irure. Aliqua et
+                consequat ipsum in veniam officia est consectetur fugiat. Ex ex deserunt eu labore veniam tempor consequat consectetur non proident duis. </p>
+            <pre>
+               <code>
+                    var codeBlocks = getElementsByTagName('code');
+                    for (let i = 0; i < codeBlocks.length; i++){
+                        let b = codeBlocks[i];
+                        b.style.fontFamily = "'Victor Mono', monospace";
+                    }
+    
+               </code>
+           </pre>
+            <p> Incididunt qui eiusmod enim et excepteur proident ad cillum do eu non. Quis reprehenderit elit ea ea ex. Tempor qui fugiat sint labore tempor. Aliquip sunt do id dolor do Lorem proident enim fugiat voluptate. Do quis minim sunt et dolor id
+                sunt eiusmod ex anim. Magna occaecat Lorem tempor ipsum deserunt minim adipisicing tempor esse Lorem. </p>
+        </div>
+        <div class="subtopic-container">
+            <h2 class="subtopic">Laborum nulla qui ex reprehenderit officia Lorem id esse cupidatat aliqua.</h2>
+            <p class="article-text-regular"> Lorem labore ea ad mollit sit nulla nostrud. Magna aliqua velit nisi nulla ea aliqua aliquip enim anim. Ea in occaecat nostrud sunt cillum. Officia duis duis magna nostrud et aliqua ipsum id magna nostrud elit officia qui irure. Aliqua et
+                consequat ipsum in veniam officia est consectetur fugiat. Ex ex deserunt eu labore veniam tempor consequat consectetur non proident duis. </p>
+            <p> Sit anim nisi officia veniam esse. Cupidatat veniam laborum amet enim dolore nisi ea nostrud qui. Nulla pariatur nisi magna ut incididunt esse ullamco aliquip pariatur occaecat in veniam cillum. Nisi qui cupidatat elit elit incididunt sit
+                in. Eiusmod aliquip consequat esse esse quis eiusmod nisi do labore ea. Incididunt amet ullamco enim sunt. Officia adipisicing mollit nulla anim et ex consectetur commodo duis cupidatat. </p>
+            <p> Incididunt qui eiusmod enim et excepteur proident ad cillum do eu non. Quis reprehenderit elit ea ea ex. Tempor qui fugiat sint labore tempor. Aliquip sunt do id dolor do Lorem proident enim fugiat voluptate. Do quis minim sunt et dolor id
+                sunt eiusmod ex anim. Magna occaecat Lorem tempor ipsum deserunt minim adipisicing tempor esse Lorem. </p>
+        </div>
+        <div class="subtopic-container">
+            <h2 class="subtopic">Adipisicing reprehenderit nostrud incididunt excepteur est anim mollit pariatur eu ipsum. </h2>
+            <p class="article-text-regular"> Est voluptate exercitation in esse aute esse ut laborum. </p>
+        </div> -->
+    </div>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
