@@ -2,9 +2,9 @@
 
 <body>
     {{ partial "partials/header.html" .}}
-    <h1 class="title">{{ .Title }}</h1>
-    <h6>{{ .Date.Format "Mon, Jan 2, 2020" }}</h6>
-    {{ .Content }} {{ partial "partials/footer.html" .}}
+    
+    {{ .Content }}
+     {{ partial "partials/footer.html" .}}
 </body>
 
 {{end}}

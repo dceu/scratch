@@ -2,6 +2,7 @@ var w = window.innerWidth;
 var h = window.innerHeight;
 var x = window.matchMedia("(max-width: 900px)");
 
+
 function openNav() {
     if (x.matches) {
 
