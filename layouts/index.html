@@ -38,7 +38,7 @@
                 <p class="meta">{{.ReadingTime }} min read</p>
             </h2>
 
-            <p>{{ .Summary }} <br>. . .<a class="read-more" href="{{ .RelPermalink }}"> more --></a></p>
+            <p>{{ .Summary }} <br>. . .<a class="read-more" href="{{.Permalink}}"> more --></a></p>
         </div>
         {{- end }}
 
@@ -103,6 +103,7 @@
         </div> -->
     </div>
     <script src="js/nav.js"></script>
+    <footer></footer>
 </body>
 
 </html>
